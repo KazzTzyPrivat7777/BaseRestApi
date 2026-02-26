@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Owner - KazzTzy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Outfit', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: #0d0d0d;
+      border: 1px solid #222;
+      border-radius: 16px;
+      padding: 40px 32px;
+      max-width: 360px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .pp-wrap {
+      margin-bottom: 20px;
+    }
+
+    .pp-wrap img {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #fff;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      color: #aaa;
+      font-size: 12px;
+      padding: 3px 12px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+
+    .info-list {
+      border-top: 1px solid #1e1e1e;
+      padding-top: 20px;
+      margin-bottom: 24px;
+    }
+
+    .info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #1a1a1a;
+      font-size: 14px;
+    }
+
+    .info-row:last-child { border-bottom: none; }
+
+    .info-key {
+      color: #666;
+      font-weight: 500;
+    }
+
+    .info-val {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .soc-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: #111;
+      border: 1px solid #333;
+      color: #aaa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .soc-btn:hover { transform: translateY(-2px); }
+    .soc-btn.yt:hover { background: #ff0000; border-color: #ff0000; color: #fff; }
+    .soc-btn.gh:hover { background: #24292e; border-color: #24292e; color: #fff; }
+    .soc-btn.wa:hover { background: #25d366; border-color: #25d366; color: #fff; }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 24px;
+      color: #555;
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 0.2s;
+    }
+
+    .back-btn:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="pp-wrap">
+      <img src="/KazzTzy.jpg" alt="PP KazzTzy" onerror="this.src='https://raw.githubusercontent.com/Kayzzaoshi-code/Uploader/main/file_1771617454320.jpeg'">
+    </div>
+    <div class="name">KazzTzy</div>
+    <div class="badge">Owner</div>
+    <div class="info-list">
+      <div class="info-row">
+        <span class="info-key">Provinsi</span>
+        <span class="info-val">Jawa Barat</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Kota</span>
+        <span class="info-val">Bandung</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Umur</span>
+        <span class="info-val">15 Tahun</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Cita-Cita</span>
+        <span class="info-val"> Jadi DevPlenger</span>
+      </div>
+    </div>
+    <div class="socials">
+      <a class="soc-btn yt" href="https://www.youtube.com/@KazzOfficialZ4Z" target="_blank" title="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a class="soc-btn gh" href="https://github.com/Kayzzaoshi-code" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a class="soc-btn wa" href="https://wa.me/6283167295612" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <a class="back-btn" href="/"><i class="fa fa-arrow-left"></i> Kembali</a>
+  </div>
+
+</body>
+</html>
