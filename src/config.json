@@ -1,0 +1,43 @@
+{
+  "settings": {
+    "creator": "KazzTzy",
+    "apiName": "KazzTzyy",
+    "description": "Simple Base Apiz.",
+    "apiVersion": "v1.0",
+    "github": "https://github.com/Kayzzaoshi-code",
+    "youtube": "https://www.youtube.com/@KazzOfficialZ4Z",
+    "whatsapp": "https://wa.me/6283167295612"
+  },
+  "tags": {
+    "ai": [
+      {
+        "name": "DeepSeek AI",
+        "endpoint": "/api/ai/deepseek",
+        "method": "GET",
+        "description": "AI DeepSeek fokus jawaban teknis, logika, dan pemrograman.",
+        "params": [
+          {
+            "name": "q",
+            "required": true,
+            "description": "Pertanyaan atau pesan yang dikirim ke DeepSeek AI"
+          }
+        ]
+      }
+    ],
+    "search": [
+      {
+        "name": "F-Droid Search",
+        "endpoint": "/api/search/fdroid",
+        "method": "GET",
+        "description": "Cari aplikasi di F-Droid berdasarkan nama, atau masukkan URL detail untuk info versi & download.",
+        "params": [
+          {
+            "name": "text",
+            "required": true,
+            "description": "Nama aplikasi atau URL detail F-Droid"
+          }
+        ]
+      }
+    ]
+  }
+}
