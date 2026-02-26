@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KazzTzy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .pp, .hero-avatar img {
+      background: #1a1a1f;
+    }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <div class="header-left">
+      <img class="pp" id="pp" src="/KazzTzy.jpg" alt="pp" fetchpriority="high">
+      <span class="brand" id="api-name">KazzTzy</span>
+    </div>
+    <div class="header-right">
+      <button class="theme-btn" id="themeBtn" title="Toggle Theme">
+        <i class="fa fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburgerBtn" title="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="drop-menu" id="dropMenu">
+  <a class="drop-item" href="/owner.html">
+    <i class="fa fa-user"></i> Owner
+  </a>
+</div>
+
+<div class="hero">
+  <div class="hero-avatar">
+    <img id="hero-pp" src="/KazzTzy.jpg" alt="avatar" fetchpriority="high">
+  </div>
+  <h1 id="hero-name">KazzTzy</h1>
+  <p id="hero-desc">Simple Base Apiz</p>
+  <div class="hero-socials">
+    <a class="social-link youtube" id="link-youtube" href="#" target="_blank">
+      <i class="fab fa-youtube"></i>
+    </a>
+    <a class="social-link github" id="link-github" href="#" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a class="social-link whatsapp" id="link-whatsapp" href="#" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+</div>
+
+<main class="main" id="main-content">
+  <div class="search-wrap">
+    <i class="fa fa-search search-icon"></i>
+    <input type="text" id="searchInput" placeholder="Search endpoints...">
+  </div>
+  <div id="apiList"></div>
+  <div id="noResults" style="display:none">
+    <i class="fa fa-search-minus no-res-icon"></i>
+    <p>No results found</p>
+  </div>
+</main>
+
+<div id="toast" class="toast hidden">
+  <i class="fa fa-check-circle"></i>
+  <span id="toast-msg"></span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
